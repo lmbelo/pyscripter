@@ -585,6 +585,7 @@ initialization
   CmdLineReader.declareFlag('PYTHON312', 'Use Python version 3.12', False);
   CmdLineReader.declareFlag('PYTHON313', 'Use Python version 3.13', False);
   CmdLineReader.declareFlag('PYTHON314', 'Use Python version 3.14', False);
+  CmdLineReader.declareFlag('PYTHON315', 'Use Python version 3.15', False);
   CmdLineReader.declareString('PROJECT', 'Specify a project file to open');
   CmdLineReader.declareString('PYTHONDLLPATH', 'Use a specific Pythonxx.dll');
 
