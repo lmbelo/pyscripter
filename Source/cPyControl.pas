@@ -80,7 +80,7 @@ type
       const Msg: System.Messaging.TMessage);
   public
     const MinPyVersion = '3.8';
-    const MaxPyVersion = '3.14';
+    const MaxPyVersion = '3.15';
   public
     // ActiveInterpreter and ActiveDebugger are created
     // and destroyed in frmPythonII
@@ -323,7 +323,9 @@ begin
   else if CmdLineReader.readFlag('PYTHON313') then
     ExpectedVersion := '3.13'
   else if CmdLineReader.readFlag('PYTHON314') then
-    ExpectedVersion := '3.14';
+    ExpectedVersion := '3.14'
+  else if CmdLineReader.readFlag('PYTHON315') then
+    ExpectedVersion := '3.15';
   DLLPath := CmdLineReader.readString('PYTHONDLLPATH');
 
   ReadFromAppStorage(GI_PyIDEServices.LocalAppStorage, LastVersion, LastInstallPath);
